@@ -1,0 +1,46 @@
+{
+  "name": "kosmos-cli",
+  "description": "React Static Site Generator",
+  "version": "0.1.0",
+  "homepage": "https://github.com/velocitycoding/kosmos-cli",
+  "author": {
+    "name": "cameronjroe",
+    "url": "http://github.com/cameronjroe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/velocitycoding/kosmos-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/velocitycoding/kosmos-cli/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/velocitycoding/kosmos-cli/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "cli",
+    "command line"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "kosmos": "./bin/kosmos"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "mocha -R test"
+  },
+  "dependencies": {
+    "minimist": "~0.0.8",
+    "verbalize": "~0.1.1",
+    "vorpal": "^1.5.5"
+  },
+  "devDependencies": {
+    "verb": "~0.2.0"
+  }
+}
