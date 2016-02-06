@@ -1,5 +1,5 @@
 #!/usr/bin/env node
+require('babel-core/register');
 
-import cli from '../lib';
-
-cli();
+var cli = require('../lib');
+cli.default();
