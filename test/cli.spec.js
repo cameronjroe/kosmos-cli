@@ -3,9 +3,8 @@ import cli from '../lib'
 
 describe("kosmos-cli", () => {
   
-  it("should work", () => {
+  it("should create a new project", () => {
     
-    expect(true).to.be.true;
 
   });
 
