@@ -1,8 +1,8 @@
 {
   "name": "kosmos-cli",
   "description": "React Static Site Generator",
-  "version": "0.1.0",
   "homepage": "https://github.com/velocitycoding/kosmos-cli",
+  "version": "0.0.0-semantic-release",
   "keywords": [
     "cli",
     "command line"
@@ -21,7 +21,10 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register"
+    "commit": "git-cz",
+    "test": "mocha --compilers js:babel-core/register",
+    "test:watch": "mocha -w --compilers js:babel-core/register",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "commander": "^2.9.0",
@@ -36,11 +39,16 @@
     "commitizen": "2.5.0",
     "cz-conventional-changelog": "1.1.5",
     "mocha": "2.4.5",
+    "semantic-release": "^4.3.5",
     "verb": "~0.2.0"
   },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cameronjroe/kosmos-cli.git"
   }
 }
